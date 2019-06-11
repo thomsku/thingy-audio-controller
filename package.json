@@ -10,6 +10,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "thingy52_web_bluetooth": "^1.5.2-transpiled",
+    "tone": "^13.4.9",
     "typescript": "3.5.1"
   },
   "scripts": {
@@ -31,6 +33,23 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/tone": "git://github.com/Tonejs/TypeScript.git",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "react-test-renderer": "^16.8.6",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.tsx"
     ]
   }
 }
