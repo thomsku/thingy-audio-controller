@@ -22,8 +22,8 @@ class Page extends React.Component<{}, IState> {
   private chorus!: Tone.Chorus;
 
   public componentDidMount() {
-    this.chorus = new Tone.Chorus(2, 2.5, 0.5).toMaster();
-    this.chorus.wet.value = 0;
+    this.chorus = new Tone.Chorus(2, 2.5, 0.0).toMaster();
+    // this.chorus.wet.value = 0;
     this.filter = new Tone.Filter(1500, "lowpass").toMaster();
     this.player = new Tone.Player("./song.mp3");
     this.player.loop = true;
@@ -68,9 +68,9 @@ class Page extends React.Component<{}, IState> {
   public temperatureToFilterListener = (data: any) => {
     // can do gravity with filter?
     if (data.detail.value === 1) {
-      this.chorus.wet.value = 1;
+      this.chorus.depth = 0.5;
     } else {
-      this.chorus.wet.value = 0;
+      this.chorus.depth= 0;
     }
     // this.filter.frequency.value = data.detail.heading * 30 + 300;
   }

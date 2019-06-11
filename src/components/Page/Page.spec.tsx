@@ -19,6 +19,7 @@ jest.mock("thingy52_web_bluetooth", () => {
       connect: () => true,
       disconnect: () => true,
       temperature: {start: jest.fn()},
+      button: {start: jest.fn()},
     };
   };
 });
@@ -76,11 +77,11 @@ describe("connect", () => {
     await wrapper.instance().connect();
     await wrapper.instance().forceUpdate();
     expect(wrapper.instance().state.connected).toEqual(true);
-    expect(wrapper.find(".connectbutton").text()).toEqual("DISCONNECT");
+    expect(wrapper.find(".connectbutton").text()).toEqual("disconnect");
     await wrapper.instance().connect();
     await wrapper.instance().forceUpdate();
     expect(wrapper.instance().state.connected).toEqual(false);
-    expect(wrapper.find(".connectbutton").text()).toEqual("CONNECT");
+    expect(wrapper.find(".connectbutton").text()).toEqual("connect");
   });
 });
 
@@ -93,10 +94,10 @@ describe("play", () => {
     await wrapper.instance().play();
     await wrapper.instance().forceUpdate();
     expect(wrapper.instance().state.playingAudio).toEqual(true);
-    expect(wrapper.find(".playbutton").text()).toEqual("STOP");
+    expect(wrapper.find(".playbutton").text()).toEqual("stop");
     await wrapper.instance().play();
     await wrapper.instance().forceUpdate();
     expect(wrapper.instance().state.playingAudio).toEqual(false);
-    expect(wrapper.find(".playbutton").text()).toEqual("PLAY");
+    expect(wrapper.find(".playbutton").text()).toEqual("play");
   });
 });
