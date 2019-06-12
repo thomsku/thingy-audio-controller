@@ -7,7 +7,7 @@ interface IProps {
 
 const ConnectButton: React.FunctionComponent<IProps> = (props) => {
   return (
-    <div>
+    <div className="buttondiv">
       <button className="playbutton" onClick={props.play}>
         {props.playingAudio ? (
           "stop"
