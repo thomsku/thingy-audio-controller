@@ -52,5 +52,6 @@
       "!src/index.tsx",
       "!src/serviceWorker.ts"
     ]
-  }
+  },
+  "homepage": "https://thomsku.github.io/thingy-audio-controller/"
 }
