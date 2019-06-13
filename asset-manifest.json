@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/thingy-audio-controller/static/css/main.1ddd92d4.chunk.css",
+    "main.js": "/thingy-audio-controller/static/js/main.e188da3b.chunk.js",
+    "main.js.map": "/thingy-audio-controller/static/js/main.e188da3b.chunk.js.map",
+    "runtime~main.js": "/thingy-audio-controller/static/js/runtime~main.c769ae1e.js",
+    "runtime~main.js.map": "/thingy-audio-controller/static/js/runtime~main.c769ae1e.js.map",
+    "static/js/2.66f6cee4.chunk.js": "/thingy-audio-controller/static/js/2.66f6cee4.chunk.js",
+    "static/js/2.66f6cee4.chunk.js.map": "/thingy-audio-controller/static/js/2.66f6cee4.chunk.js.map",
+    "index.html": "/thingy-audio-controller/index.html",
+    "precache-manifest.a308ff1ed91d1337368f7b5150109061.js": "/thingy-audio-controller/precache-manifest.a308ff1ed91d1337368f7b5150109061.js",
+    "service-worker.js": "/thingy-audio-controller/service-worker.js",
+    "static/css/main.1ddd92d4.chunk.css.map": "/thingy-audio-controller/static/css/main.1ddd92d4.chunk.css.map"
+  }
+}
